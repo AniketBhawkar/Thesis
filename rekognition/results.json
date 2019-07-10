@@ -1,0 +1,315 @@
+Model Data
+----------
+Data can be retrieved from the model object using the get() method of the
+model (e.g., `$result->get($key)`) or "accessing the result like an
+associative array (e.g. `$result['key']`). You can also execute JMESPath
+expressions on the result data using the search() method.
+
+{
+    "Labels": [
+        {
+            "Name": "Pillow",
+            "Confidence": 99.4032974243164,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Cushion"
+                }
+            ]
+        },
+        {
+            "Name": "Cushion",
+            "Confidence": 99.4032974243164,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Person",
+            "Confidence": 98.63865661621094,
+            "Instances": [
+                {
+                    "BoundingBox": {
+                        "Width": 0.8591113090515137,
+                        "Height": 0.7263493537902832,
+                        "Left": 0.03484179079532623,
+                        "Top": 0.026120798662304878
+                    },
+                    "Confidence": 88.19715881347656
+                }
+            ],
+            "Parents": []
+        },
+        {
+            "Name": "Face",
+            "Confidence": 98.63865661621094,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Female",
+            "Confidence": 96.4299087524414,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Clothing",
+            "Confidence": 88.24298095703125,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Furniture",
+            "Confidence": 86.68022918701172,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Indoors",
+            "Confidence": 84.92976379394531,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Room",
+            "Confidence": 84.92976379394531,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Indoors"
+                }
+            ]
+        },
+        {
+            "Name": "Bedroom",
+            "Confidence": 84.92976379394531,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Indoors"
+                },
+                {
+                    "Name": "Room"
+                }
+            ]
+        },
+        {
+            "Name": "Bed",
+            "Confidence": 84.39767456054688,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Furniture"
+                }
+            ]
+        },
+        {
+            "Name": "Blanket",
+            "Confidence": 82.3173599243164,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Girl",
+            "Confidence": 80.11837005615234,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                },
+                {
+                    "Name": "Female"
+                }
+            ]
+        },
+        {
+            "Name": "Woman",
+            "Confidence": 79.626708984375,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                },
+                {
+                    "Name": "Female"
+                }
+            ]
+        },
+        {
+            "Name": "Smile",
+            "Confidence": 74.8618392944336,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                },
+                {
+                    "Name": "Face"
+                }
+            ]
+        },
+        {
+            "Name": "People",
+            "Confidence": 70.8214340209961,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Portrait",
+            "Confidence": 70.09676361083984,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Photography"
+                },
+                {
+                    "Name": "Person"
+                },
+                {
+                    "Name": "Face"
+                }
+            ]
+        },
+        {
+            "Name": "Photography",
+            "Confidence": 70.09676361083984,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Kid",
+            "Confidence": 69.26114654541016,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Baby",
+            "Confidence": 55.97649383544922,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Head",
+            "Confidence": 55.97119903564453,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Newborn",
+            "Confidence": 55.94108581542969,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Baby"
+                },
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Sleeping",
+            "Confidence": 55.64757537841797,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Heel",
+            "Confidence": 54.230857849121094,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Hug",
+            "Confidence": 53.92478942871094,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        },
+        {
+            "Name": "Dress",
+            "Confidence": 53.10322952270508,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Clothing"
+                }
+            ]
+        },
+        {
+            "Name": "Green",
+            "Confidence": 52.63329315185547,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Skin",
+            "Confidence": 51.038143157958984,
+            "Instances": [],
+            "Parents": []
+        },
+        {
+            "Name": "Pants",
+            "Confidence": 50.571922302246094,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Clothing"
+                }
+            ]
+        },
+        {
+            "Name": "Teen",
+            "Confidence": 49.51686096191406,
+            "Instances": [],
+            "Parents": [
+                {
+                    "Name": "Person"
+                }
+            ]
+        }
+    ],
+    "LabelModelVersion": "2.0",
+    "@metadata": {
+        "statusCode": 200,
+        "effectiveUri": "https:\/\/rekognition.eu-west-1.amazonaws.com",
+        "headers": {
+            "content-type": "application\/x-amz-json-1.1",
+            "date": "Wed, 05 Jun 2019 11:57:18 GMT",
+            "x-amzn-requestid": "110aa43f-8789-11e9-8472-979f55239fd1",
+            "content-length": "2945",
+            "connection": "Close"
+        },
+        "transferStats": {
+            "http": [
+                []
+            ]
+        }
+    }
+}
