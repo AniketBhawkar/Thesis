@@ -1,6 +1,6 @@
 <?php
 
-$log_directory = 'images/challenge2018';
+$log_directory = '../Images/challenge2018/';
 
 $results_array = array();
 

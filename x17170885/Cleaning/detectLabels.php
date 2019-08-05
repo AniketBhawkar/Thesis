@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require '../AWS/vendor/autoload.php';
 
 $client = new Aws\Rekognition\RekognitionClient([
 	'version' => 'latest',

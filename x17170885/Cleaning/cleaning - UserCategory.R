@@ -1,12 +1,12 @@
-setwd("F:/Masters/Semester 3/thesis/rekognition")
+setwd("F:/Masters/Semester 3/thesis/x17170885/Cleaning/")
 library(dplyr)
 library(plyr)
 library(tidyverse)
 library(reshape2)
 
-df = read.csv("./userProfiles.csv")
-df1 = read.csv("./dataset-userCategory.csv")
-df2 = read.csv("./dataset1.csv")
+df = read.csv("../Dataset/userProfiles.csv")
+df1 = read.csv("../Dataset/dataset-userCategory.csv")
+df2 = read.csv("../Dataset/dataset1.csv")
 
 names(df1) <- c('id','MainCategory')
 df2$id = as.integer(df2$id)
@@ -29,4 +29,4 @@ colnames(df4)[1] <- "id"
 df = df %>%
   left_join(df4, by=c("id"))
 
-write.csv(df, "./dataset2.csv",row.names = FALSE)
+write.csv(df, "../Dataset/dataset2.csv",row.names = FALSE)

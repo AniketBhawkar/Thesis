@@ -1,7 +1,7 @@
 <?php
 
-require 'vendor/autoload.php';
-$log_directory = 'images/challenge2018/';
+require '../AWS/vendor/autoload.php';
+$log_directory = '../Images/challenge2018/';
 
 $client = new Aws\Rekognition\RekognitionClient([
 	'version' => 'latest',

@@ -1,10 +1,10 @@
-setwd("F:/Masters/Semester 3/thesis/rekognition")
+setwd("F:/Masters/Semester 3/thesis/x17170885/Cleaning/")
 library(dplyr)
 library(plyr)
 library(tidyverse)
-df = read.csv("./labels.csv",header = FALSE)
-df1 = read.csv("./MOCK_DATA.csv")
-df2 = read.csv("./images.csv",header = FALSE)
+df = read.csv("../Dataset/labels.csv",header = FALSE)
+df1 = read.csv("../Dataset/MOCK_DATA.csv")
+df2 = read.csv("../Dataset/images.csv",header = FALSE)
 
 names(df) <- c('id','Name','Label','Confidence')
 names(df1) <- c('id','City','Country','Latitude','Longitude')
@@ -85,4 +85,4 @@ df$Category = ifelse(is.element(df$Label, nature),"Nature",
 
 
 df$Name = as.factor(df$Name)
-write.csv(df, "./dataset.csv",row.names = FALSE)
+write.csv(df, "../Dataset/dataset.csv",row.names = FALSE)
